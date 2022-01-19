@@ -5,8 +5,6 @@ export default function App() {
   return (
     <div>
       <UserInfo />
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
     </div>
   );
 }
@@ -36,6 +34,7 @@ const reducer = (state, action) => {
   }
   return state;
 };
+//https://stackoverflow.com/questions/61255053/react-usecallback-with-parameter
 function UserInfo() {
   const [state, dispatch] = useReducer(reducer, initialState);
   let updateFormInfo = (fieldName) => (e) => {
